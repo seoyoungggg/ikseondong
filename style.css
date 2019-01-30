@@ -1,0 +1,866 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #F1F1F1;
+    color: #272727;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h2{
+    font-size: 1.4em;
+}
+
+h3{
+    font-weight: 400;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+ol {
+    list-style: none;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 47px;
+    z-index: 999;
+    background-color: rgba(72,72, 72, 0.1);
+    overflow: hidden;
+}
+
+.colored{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.nav ol li{
+    width: 100px;
+    float: right;
+    padding: 1em;
+}
+
+#footer {
+    clear: both; 
+    background-color: #e1e1e1;
+    overflow: hidden;    
+}
+
+#frame {
+    background-color: #F3F3F3;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*pc*/
+@media screen and (min-width:481px){
+    #header{
+        width: 100%;
+        height: 730px;
+        background: url('images/header.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed;
+    }
+    
+    #content1{
+        margin: 0 auto;
+/*        border: 2px dashed red;*/
+    }
+    
+    #introduce{
+        max-width: 1080px;
+        min-width: 1080px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    #intro-content{
+        width: 100%;
+        height: 460px;
+        margin: 190px auto;
+    }
+    
+    .title1 {
+        width: 103px;
+        height: 30px;
+        margin: 0 0 11em 0;
+    }
+    
+    #intro-image{
+        width: 416px;
+        height: 447px;
+        float: right;
+        margin: 0 4em 0 0;
+    }
+    
+    #intro-text{
+        width: 40%;
+        float: left;
+        margin: 0 0 0 4em;
+    }
+    
+    #content2 {
+        margin: 0 auto;
+        background-color: #F2F2F2;
+    }
+    
+    #photozone{
+        max-width: 1080px;
+        min-width: 1080px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .photo-content{
+        height: 360px;
+        margin: 160px auto;
+    }
+    
+    .title2{
+        width: 152px;
+        height: 26px;
+        margin: 180px 0 0 4em;
+    }
+    
+    .photo-left{
+        width: 445px;
+        height: 333px;
+        float: left;
+        margin: 0 0 0 4em;
+    }
+    
+    .photo-text{
+        float: left;
+        margin: 0 0 0 4em;
+    }
+    
+    .photo-leftfont{
+        margin: 7em 0 0 0;
+    }
+    
+    .photozoneline{
+        float: left;
+        width: 400px;
+        margin: 13px auto;
+        height: 3px;
+        border-bottom: 2px solid #404040;
+    }
+    
+    .artinfo{
+        margin: 3.5em 0;
+    }
+    
+    #photo-right{
+        width: 445px;
+        height: 333px;
+        float: right;
+        margin: 0 4em 0 0;
+    }
+    
+    #photo-text2{
+        width: 40%;
+        float: left;
+        margin: 7em 0 0 4em;
+    }
+    
+    #photo-rightfont{
+        float: right;
+        margin: 0 0 0 3em;
+    }
+    
+    .photozoneline2{
+        float: right;
+        width: 420px;
+        margin: 13px auto;
+        height: 3px;
+        border-bottom: 2px solid #404040;
+    }
+    
+    .artinfo2{
+        float: right;
+        margin: 3.5em 0;
+        text-align: right;
+    }
+    
+    #content3{
+        margin: 0 auto;
+        background-color: #FFF;
+    }
+    
+    .item_3{
+        height: auto;
+        margin: 0 auto;
+    }
+
+    
+    .shop{
+        max-width: 1080px;
+        min-width: 1080px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .title3{
+        width: 123px;
+        height: 28px;
+        margin: 180px 0 7.5em 4em;
+    }
+    
+    .titleback{
+        position: absolute;
+        width: 378px;
+        height: 52px;
+        margin: -95px 353px;
+    }
+    
+    .shoptitle{
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        margin: 3em auto;
+        z-index: 999;
+    }
+    
+    .store-up{
+        float: left;
+        width: 100%;
+        height: 350px;
+        position: relative;
+        margin-bottom: 0;
+    }
+    
+    .store-pic-left{
+        float: left;
+        margin: 0 0 0 4em;
+    }
+    
+    .store-text-right{
+        position: relative;
+        top: -327px;
+        background-color: #F1F1F1;
+        height: auto;
+        padding: 40px;
+        float: right;
+        width: auto;
+        margin-right: 4em;
+    }
+    
+    .store-text-head{
+        float: left;
+        font-weight: bold;
+        width: 90px;
+        margin: 0;
+    }
+    
+    .storeline{
+        width: 30px;
+        border-bottom: 2px solid #404040;
+        margin: 15px auto;
+    }
+    
+    .store-down{
+        position: relative;
+        float: left;
+        width: 92%;
+        margin: 0 4em;
+        margin-bottom: 12em;
+        padding: 0 auto;
+    }
+    
+    .store-inside{
+        float: left;
+        width: 31.33%;
+        height: inherit;
+        margin: 30px 10px 0 0;
+        text-align: center;
+    }
+    
+    .store-inside2{
+        float: left;
+        width: 31.33%;
+        height: inherit;
+        margin: 30px 10px 0 0;
+        text-align: center;
+    }
+    
+    .store-inside3{
+        float: left;
+        width: 31.33%;
+        height: inherit;
+        margin: 30px auto;
+        text-align: center;
+    }
+    
+    .store-pic-right {
+        float: right;
+        margin: 0 4em 0 0;
+    }
+    
+    .store-text-left{
+        position: absolute;
+        float: left;
+        top: 13px;
+        height: 300px;
+        width: 300px;
+        background-color: #F1F1F1;
+        height: auto;
+        padding: 40px;
+        width: auto;
+        margin-left: 4em;
+    }
+    
+    #content4{
+        margin: 0 auto;
+        background-color: #F2F2F2;
+    }
+    
+    .photobook{
+        max-width: 1080px;
+        min-width: 1080px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .title4{
+        width: 148px;
+        height: 26px;
+        margin: 180px 0 3em 4em;
+    }
+    
+    #streetphoto{
+        float: left;
+        margin: 0em 4em 12em 4em;
+    }
+    
+    #streetphoto-sub{
+        margin: 0 auto;
+    }
+    
+    .street1{
+        float: left;
+        width: 461px;
+        margin-top: 4px;
+        margin-right: 4px;
+    }
+    
+    .street2{
+        float: left;
+        width: 225px;
+        margin: 4px 4px;
+    }
+    
+    .line{
+        float: left;
+    }
+    
+    #content5{
+        margin: 0 auto;
+        background-color: #ebebeb;
+    }
+    
+    .title5{
+        width: 160px;
+        height: 26px;
+        margin: 180px 0 3em 4em;
+    }
+    
+    .map{
+        max-width: 1080px;
+        min-width: 1080px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-bottom: 3em;
+    }
+    
+    #mapcontainer{
+        max-height: 1080px;
+        margin: 0 auto;
+    }
+    
+    #googlemap{
+        width: 100%;
+        max-width: 935px;
+        min-width: 935px;
+        margin: 0 0 0 4em;
+    }
+    
+    #maplist{
+        margin-top: 2em;
+        width: 100%;
+        float: left;
+        margin-left: 6em;
+        margin-right: 4em;
+        
+    }
+    .maplist-sub{
+        float: left;
+        width: 25%;
+        height: 3em;
+    }
+    
+    .maplist-sub2{
+        float: left;
+        width: 25%;
+        height: 3em;
+        padding: 0 1em 0 1em;
+        border-right: 2px solid #404040;
+        margin: 0 0 7em 0;
+    }
+    
+    .maplist-sub3{
+        float: left;
+        width: 25%;
+        height: 3em;
+        padding: 0 0 0 3em;
+    }
+    
+    .mapbold{
+        font-weight: bolder;
+    }
+    
+    #arrow{
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 10em;
+    }
+
+    .footer{
+        max-width: 1080px;
+        min-width: 1080px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    #footer-left{
+        float: left;
+        width: 90px;
+        height: 51px;
+        margin: 80px 160px 0 4em;
+    }
+    
+    #contact{
+        float: left;
+        margin: 80px 160px;
+    }
+    
+    .footer-p{
+        color: #272727;
+        line-height: 1em;
+        font-weight: 700;
+    }
+    
+    .footer-p2{
+        color: #272727;
+        line-height: 1em;
+        margin-top: 20px;
+        font-weight: 400;
+    }
+    
+    .footer-p3{
+        color: #272727;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    
+    #social{
+        float: right;
+        width: 60px;
+        margin: 80px 6em;
+        
+    }
+
+    #icon{
+        float: left;
+        width: 90px;
+        height: auto;
+    }
+    
+    .eachicon{
+        margin-top: 20px;
+        float: left;
+        width: 29px;
+        height: 29px;
+    }
+    
+    .eachicon2{
+        margin-top: 20px;
+        margin-left: 5px;
+        float: left;
+        width: 29px;
+        height: 29px;
+    }
+    
+    #copyright{
+        float: left;
+        margin: 0 0 50px 360px;
+    }    
+}
+
+
+/*mobile*/
+@media screen and (max-width:480px){
+    
+    p{
+        font-size: 0.8em;
+    }
+    
+    h2{
+        font-size: 1em;
+    }
+    
+    h3{
+        font-size: 1em;
+    }
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 30px;
+    }
+    
+    .nav ol li {
+        font-size: 0.7em;
+        width: 57px;
+        margin-top: 0.7em;
+        margin-right: 0.1em;
+        padding: 0.1em;
+    }
+    
+    #header{
+        width: 100%;
+        height: 355px;
+        background: url(images/header.jpg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    #intro-image{
+        display: none;
+    }
+    
+    #content1{
+        margin: 0 auto;
+        padding: 4em 0 0 0;
+    }
+    
+    .title1{
+        width: 68px;
+        margin: 2em auto;
+    }
+    
+    #intro-text{
+        text-align: center;
+        margin-bottom: 5em;
+    }
+    
+    #content2{
+        padding-top: 5em;
+        background-color: #ebebeb;
+        padding-bottom: 4em;
+    }
+    
+    .title2{
+        width: 100px;
+        margin: 0 auto 2em auto;
+    }
+
+    .photo-left{
+        padding: 0.7em;
+    }
+    
+    .photo-leftfont{
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .artinfo{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    
+    #photo-right{
+        padding: 0.7em;
+    }
+
+    #photo-rightfont{
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .artinfo2{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    
+    #content3{
+        padding-top: 5em;
+        height: auto;
+        background-color: #FFF;
+    }
+    
+    .title3{
+        width: 83px;
+        margin: 2em auto;
+        margin-bottom: 6em;
+    }
+    
+    .item_3{
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .titleback{
+        position: relative;
+        width: 320px;
+        height: 45px;
+        margin: 0px auto;
+        top: -2.8em;
+    }
+    
+    .store-up{
+        position: relative;
+        top: -2em;
+        height: auto;
+        margin-top: 0.0em;
+        
+    }
+    
+    .store-down{
+        position: relative;
+        height: 190px;
+        margin-bottom: 5em;
+        margin-top: -1.5em;
+    }
+    
+    .shoptitle{
+        padding: 0;
+        margin: 0 ;
+        font-weight: bold;
+        height: 2em;
+        position: relative;
+        text-align: center;
+        z-index: 999;
+    }
+    
+    .store-pic-left{
+        padding: 0.7em;
+    }
+    
+    .store-text-right{
+        text-align: center;
+    }
+    
+    .store-text-head{
+        font-weight: bold;
+    }
+    
+    .store-inside{
+        float: left;
+        margin-top: 1em;
+        padding: 0.7em 0 0.7em 0.7em;
+        width: 45%;
+    }
+    
+    .storeline{
+        width: 17px;
+        border-bottom: 2px solid #404040;
+        margin: 0.5em auto;
+    }
+    
+    .store-inside2{
+        float: left;
+        margin-top: 1em;
+        padding: 0.7em;
+        width: 45%;
+    }
+    
+    .store-inside3{
+        display: none;
+    }
+    
+    .store-down p{
+        text-align: center;
+    }
+    
+    .store-pic-right{
+        padding: 0.7em;
+    }
+    
+    .store-text-left{
+        text-align: center;
+    }
+    
+    #content4{
+        padding-top: 5em;
+        background-color: #F2F2F2;
+        height: 50em;
+        padding-bottom: 5em;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+    }
+    
+    .title4{
+        width: 100px;
+        margin: 2em auto;
+    }
+    
+    #streetphoto{
+        width: 98%;
+        height: 42em;
+        margin: 0 auto;
+    }
+    
+    #streetphoto-sub{
+        margin: 0 auto;
+        height: 54em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    .line{
+        height: 20%;
+        margin: 0 auto;
+    }
+    
+    .street1{
+        margin: 0 auto;
+        width: 99%;
+        margin: 1%;
+    }
+    
+    .street2{
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+    
+    #content5{
+        margin: 5em auto;
+        background-color: #FFFF;
+    }
+    
+    .title5{
+        width: 100px;
+        margin: 2em auto;
+    }
+    
+    .map{
+        padding: 0 0.7em;
+        padding-bottom: 3em;
+        height: 360px;
+    }
+    
+    #googlemap{
+        width: 100%;
+        height: auto;
+    }
+    
+    #maplist{
+        width: 100%;
+        float: left;
+        margin: 1em auto;
+        
+    }
+    
+    .maplist-sub{
+        text-align: center;
+        margin: 1em;
+    }
+    
+    .maplist-sub2{
+        text-align: center;
+        margin: 1em;
+    }
+    
+    .maplist-sub3{
+        text-align: center;
+        margin: 1em;
+    }
+    
+
+    #arrow{
+        width: 30px;
+        margin: 0 auto;
+    }
+
+    
+    
+    #footer{
+    }
+    
+    #footer-left{
+        float: left;
+        width: 70px;
+        margin: 2em 0.7em;
+    }
+    
+    #contact{
+        float: left;
+        width: 90px;
+        margin: 2em 2.5em;
+    }
+    
+    .footer-p{
+        font-weight: bold;
+    }
+    
+    .footer-p2{
+        margin: 5px 0;
+    }
+    
+    #social{
+        float: right;
+        width: 65px;
+        margin: 2em 0.7em;
+    }
+    
+    #icon{
+        margin: 5px 0;
+    }
+    
+    .eachicon{
+        width: 25px;
+    }
+    
+    .eachicon2{
+        width: 25px;
+    }
+    
+    #copyright{
+        float: left;
+        margin: 2em 3em;
+    }
+    
+    .footer-p3{
+        font-weight: lighter;
+    }
